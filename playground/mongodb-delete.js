@@ -43,7 +43,9 @@ if(err)
 	
 	});*/
 	
-	db.collection('Users').findOneAndDelete({_id:new ObjectId("5b52c99c78a5380ec730d7a3")}).then((results)=>{
+	db.collection('Users').findOneAndDelete({
+		_id:new ObjectId("5b52c99c78a5380ec730d7a3")})
+		.then((results)=>{
 	console.log(results);
 	});
 	
